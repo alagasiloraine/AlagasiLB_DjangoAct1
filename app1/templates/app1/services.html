@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarHub - Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        header {
+            margin-top: 56px;
+        }
+
+        .process-icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        .process-icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-car-front-fill me-2"></i>CarHub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'services' %}">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'galleries' %}">Galleries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5 mb-5">
+        <div class="container">
+            <h1 class="display-2 fw-bold">Our Services</h1>
+            <p class="lead fs-4">Comprehensive care for your vehicle</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <h2 class="text-center mb-5">What We Offer</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-tools text-primary display-4 mb-3"></i>
+                            <h3 class="card-title">Maintenance</h3>
+                            <p class="card-text">Regular check-ups and maintenance to keep your car in top condition.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-gear-wide-connected text-primary display-4 mb-3"></i>
+                            <h3 class="card-title">Repairs</h3>
+                            <p class="card-text">Expert repairs for all makes and models, using quality parts.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-car-front text-primary display-4 mb-3"></i>
+                            <h3 class="card-title">Detailing</h3>
+                            <p class="card-text">Professional cleaning and detailing to make your car look its best.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-center mb-5">Our Process</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle process-icon-wrapper process-icon mb-3">
+                            <i class="bi bi-1-circle-fill display-5"></i>
+                        </div>
+                        <h4>Diagnosis</h4>
+                        <p>We thoroughly inspect your vehicle to identify any issues.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle process-icon-wrapper process-icon mb-3">
+                            <i class="bi bi-2-circle-fill display-5"></i>
+                        </div>
+                        <h4>Estimate</h4>
+                        <p>We provide a detailed estimate of the required work and costs.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle process-icon-wrapper process-icon mb-3">
+                            <i class="bi bi-3-circle-fill display-5"></i>
+                        </div>
+                        <h4>Service</h4>
+                        <p>Our expert technicians perform the necessary repairs or maintenance.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle process-icon-wrapper process-icon mb-3">
+                            <i class="bi bi-4-circle-fill display-5"></i>
+                        </div>
+                        <h4>Quality Check</h4>
+                        <p>We perform a final inspection to ensure everything is perfect.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light p-5 rounded-3 text-center">
+            <h2 class="mb-4">Ready to Schedule a Service?</h2>
+            <p class="lead mb-4">Our team of experts is ready to take care of your vehicle.</p>
+            <a href="#" class="btn btn-primary btn-lg">Book an Appointment</a>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-envelope me-2"></i>info@carhub.com</p>
+                    <p><i class="bi bi-telephone me-2"></i>(555) 123-4567</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-2" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2" title="Twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-2" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email">
+                        <button type="submit" class="btn btn-outline-light">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2024 CarHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

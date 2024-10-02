@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarHub - Your Ultimate Car Destination</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> <!-- Ensure this line is present -->
+
+    <style>
+        header {
+            margin-top: 56px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-car-front-fill me-2"></i>CarHub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'services' %}">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'galleries' %}">Galleries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5 mb-5">
+        <div class="container">
+            <h1 class="display-2 fw-bold">Welcome to CarHub</h1>
+            <p class="lead fs-4">Your one-stop destination for all things cars</p>
+            <a href="#features" class="btn btn-light btn-lg mt-3">Explore Now</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="features" class="mb-5">
+            <h2 class="text-center mb-5">Why Choose CarHub?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-car display-1 text-primary mb-3"></i>
+                        <h3 class="card-title">Latest Models</h3>
+                        <p class="card-text">Explore the newest car models from top manufacturers.</p>
+                    </div>
+                </div>                
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-tools display-1 text-primary mb-3"></i>
+                            <h3 class="card-title">Expert Services</h3>
+                            <p class="card-text">Professional maintenance and repair services for your vehicle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-people display-1 text-primary mb-3"></i>
+                            <h3 class="card-title">Car Community</h3>
+                            <p class="card-text">Join our community of car enthusiasts and share your passion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-cars" class="mb-5">
+            <h2 class="text-center mb-5">Featured Cars</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-speedometer2 display-1 text-danger mb-3"></i>
+                            <h5 class="card-title">Luxury Sports Car</h5>
+                            <p class="card-text">Experience the thrill of high-performance driving.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-battery-charging display-1 text-success mb-3"></i>
+                            <h5 class="card-title">Electric SUV</h5>
+                            <p class="card-text">Eco-friendly and powerful, perfect for family adventures.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-clock-history display-1 text-warning mb-3"></i>
+                            <h5 class="card-title">Classic Vintage</h5>
+                            <p class="card-text">Timeless elegance from the golden age of automobiles.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="mb-5">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-wrench text-primary me-3 fs-1"></i>
+                        <div>
+                            <h5 class="mb-0">Maintenance</h5>
+                            <p class="mb-0">Regular check-ups</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-paint-bucket text-primary me-3 fs-1"></i>
+                        <div>
+                            <h5 class="mb-0">Body Work</h5>
+                            <p class="mb-0">Repairs & painting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-gear text-primary me-3 fs-1"></i>
+                        <div>
+                            <h5 class="mb-0">Engine Repair</h5>
+                            <p class="mb-0">Diagnostics & fixes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-lightning-charge text-primary me-3 fs-1"></i>
+                        <div>
+                            <h5 class="mb-0">Electric Systems</h5>
+                            <p class="mb-0">Wiring & batteries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="bg-light p-5 rounded-3 text-center">
+            <h2 class="mb-4">Ready to Find Your Dream Car?</h2>
+            <p class="lead mb-4">Join CarHub today and get access to exclusive deals and expert advice.</p>
+            <a href="#" class="btn btn-primary btn-lg">Sign Up Now</a>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-envelope me-2"></i>info@carhub.com</p>
+                    <p><i class="bi bi-telephone me-2"></i>(555) 123-4567</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-2" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2" title="Twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-2" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Our Location</h5>
+                    <p><i class="bi bi-geo-alt me-2"></i>Sta. Isabel, Calapan City Oriental Mindoro, Philippines</p>
+                </div>
+            </div>
+            <p class="mt-4 mb-0">&copy; 2024 CarHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
